@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact - JandK Cricket Club</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</head>
+<body class="contact">
+  <header>
+    <h1>Contact Us</h1>
+    <nav>
+      <a href="{{ url_for('home') }}">Home</a>
+      <a href="{{ url_for('about') }}">About</a>
+      <a href="{{ url_for('schedule') }}">Schedule</a>
+      <a href="{{ url_for('contact') }}">Contact</a>
+      <a href="{{ url_for('rules') }}">Rules</a>
+    </nav>
+  </header>
+  
+  <main>
+    <h2 class="heading-lines">Contact Us</h2>
+    
+    <p><strong>Address:</strong> JandK Cricket club, sport stadium Kathua, Jammu and Kashmir</p>
+    <p><strong>Phone:</strong> +91 60060 21067</p>
+    <p><strong>Instagram:</strong> @jandk_cricket</p>
+    
+    <form>
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" required><br>
+      
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br>
+      
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" required></textarea><br>
+      
+      <button type="submit">Send</button>
+    </form>
+  </main>
+  
+  <footer>&copy; 2025 JandK Cricket Club</footer>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About - JandK Cricket Club</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" /> 
+</head>
+<body class="about">
+  <header>
+    <h1>About Us</h1>
+    <nav>
+      <a href="{{ url_for('home') }}">Home</a>
+      <a href="{{ url_for('about') }}">About</a>
+      <a href="{{ url_for('schedule') }}">Schedule</a>
+      <a href="{{ url_for('contact') }}">Contact</a>
+      <a href="{{ url_for('rules') }}">Rules</a>
+    </nav>
+  </header>
+  <main>
+    <p>
+      JandK Cricket club is dedicated to nurturing future cricket stars by offering a perfect blend of professional coaching, discipline, and passion for the sport. Established with the goal of developing raw talent into skilled players, our academy provides state-of-the-art facilities, personalized training programs, and experienced coaching staff. We focus not only on physical fitness and technical skills but also on teamwork, sportsmanship, and mental strength. Whether you're a beginner or an advanced player, JK Cricket Academy is the ideal place to grow, learn, and excel in every format of the game.
+    </p>
+
+    <img src="{{ url_for('static', filename='gourav.jpg') }}" alt="Coach Gourav Sharma" class="coach-image">
+  </main>
+  
+  <section class="coach-profile">
+    <h2 class="box-heading">🏏 Head Coach Profile</h2>
+    <div class="coach-container">
+      <div class="coach-details">
+        <p><strong>Head Coach:</strong> Gourav Sharma</p>
+        <p><strong>District:</strong> Kathua</p>
+        <p><strong>State:</strong> Jammu and Kashmir</p>
+        <p>With years of experience in mentoring young cricketers, Coach Gourav Sharma leads the JK Cricket Academy with dedication and discipline. His deep understanding of the game and commitment to player growth make him a trusted guide for every aspiring athlete in the region.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>&copy; 2025 JandK Cricket Club</footer>
+
+  <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</body>
+</html>

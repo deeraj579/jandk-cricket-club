@@ -1,0 +1,74 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: plum ;
+}
+body.home{
+  background-image:url("home.jpg");
+}
+body.about{
+  background-image:url("about..jpg");
+}
+body.contact{
+  background-image:url("contac.jpg");
+}
+body.schedule{
+  background-image:url("schedule.jpg");
+}
+body.rules{
+  background-image:url("rule.jpg");
+}
+
+header {
+  
+  color:goldenrod;
+  
+  text-align: center;
+}
+
+nav {
+  
+  text-align: left;
+  border-bottom: 3px solid black;
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+
+  
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+.club-image {
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  float:right;
+  margin-right: 20px;
+}
+
+main {
+  padding: 20px;
+  color:goldenrod;
+ 
+  min-height: 30vh;
+  align-items: left;
+}
+section{
+  color: goldenrod;
+  
+}
+
+
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  margin-top: 500px;
+}

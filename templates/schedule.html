@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Schedule - JandK Cricket Club</title>
+  <!-- Use Flask's url_for to link CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="schedule">
+  <header>
+    <h1>Training Schedule</h1>
+    <nav>
+      <a href="{{ url_for('home') }}">Home</a>
+      <a href="{{ url_for('about') }}">About</a>
+      <a href="{{ url_for('schedule') }}">Schedule</a>
+      <a href="{{ url_for('contact') }}">Contact</a>
+      <a href="{{ url_for('rules') }}">Rules</a>
+    </nav>
+  </header>
+  <main>
+    <ul>
+      <li>Monday – Saturday: 5:30 PM to 7 PM</li>
+      <li>Sunday: Off</li>
+    </ul>
+  </main>
+  <footer>&copy; 2025 JandK Cricket Club</footer>
+</body>
+</html>
