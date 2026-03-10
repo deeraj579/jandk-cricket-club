@@ -1,8 +1,45 @@
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: plum ;
+  font-family: Arial, sans-serif;
+  
+  
+  background: linear-gradient(-45deg, #dda0dd, #8e44ad, #d8bfd8, #4b0082);
+  background-size: 400% 400%;
+  
+  /* 2. The Animation: Makes the colors "flow" in 3D space */
+  animation: gradientBG 15s ease infinite;
+  
+  /* 3. The 3D Depth: A subtle radial overlay adds a "lens" effect */
+  background-attachment: fixed;
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Pseudo-element to add a 3D "Glow" or depth layer */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, transparent 20%, rgba(0,0,0,0.2) 100%);
+  pointer-events: none; /* Allows you to click things through this layer */
+}
+
+/* The Animation Keyframes */
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 body.home{
   background-image:url("home.jpg");
@@ -64,11 +101,44 @@ section{
   
 }
 
-
 footer {
-  background: #222;
-  color: white;
+  background-color: #222;
+  color: #ffffff;
   text-align: center;
-  padding: 30px;
-  margin-top: 500px;
+  
+  /* Small & Balanced Padding */
+  padding: 30px 20px; 
+  margin-top: 50px;
+  
+  /* Ensure it spans the full bottom */
+  width: 100%;
+  box-sizing: border-box;
+  
+  /* Modern feel: Thin border and subtle font */
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+/* Container for your footer content */
+footer .footer-container {
+  max-width: 1200px; /* Much better than 300px for a 'wide' look */
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between; /* Puts logo on left, links on right */
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Simple Styling for links inside the footer */
+footer a {
+  color: #bbb;
+  text-decoration: none;
+  margin: 0 15px;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #fff; /* Highlights on hover */
 }
